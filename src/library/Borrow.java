@@ -42,7 +42,6 @@ public class Borrow {
         if (available) {
             changeAvailableRegister(Integer.parseInt(result_split[0]));
         }
-
         return available;
     }
 }

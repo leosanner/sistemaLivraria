@@ -50,6 +50,13 @@ public class LibraryApp {
     }
 
     // code for book operations
+    private Book buildBook() { // ajustar essa função
+        System.out.println("Insert the title:");
+
+        // pensar melhor em como fazer isso aqui
+
+        return null;
+    }
     private void createBook(Book book) {
         String r = register.searchResults(Book.class, book.getName());
         if (r.isBlank()) {
@@ -70,7 +77,7 @@ public class LibraryApp {
         register.searchResults(Book.class, search);
     }
 
-    public void borrowBook() {
+    private void borrowBook() {
         System.out.println("Please, insert the book name: ");
         scanner.nextLine();
         String bookName = scanner.nextLine();
@@ -78,8 +85,12 @@ public class LibraryApp {
         borrow.borrow(bookName);
     }
 
-    public void deliverBookBack() { // incrementar essa função depois
+    private void deliverBookBack() { // incrementar essa função depois
+        System.out.println("Please, insert the book name: ");
+        scanner.nextLine();
+        String bookName = scanner.nextLine();
 
+        borrow.deliverBack(bookName);
     }
 }
 

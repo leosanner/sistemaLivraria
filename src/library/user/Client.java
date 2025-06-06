@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class Client extends User{
     private int id;
+    private String password; // idealmente deve-se usar um hash
 
     public Client(String name, String birthday) {
         super(name, birthday);
@@ -13,6 +14,10 @@ public class Client extends User{
     private void setId() {
         IdChecker checker = new IdChecker();
         this.id = checker.returnAvailableId(Client.class);
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public ArrayList<String> displayAttributes() {
