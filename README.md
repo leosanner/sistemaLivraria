@@ -1,2 +1,5 @@
-Thats my first java project. The main ideia was to build a library system that handles with borrow, list elements, clients.
-My major propose was do delevop the classes Register and IdChecker, this classes works for any new class, just need to have a method called "displayAttributes."
+Primeiro projeto Java que fiz, fiz ele com 2 semanas de curso e acabei aprendendo bastante coisa.
+
+Existe uma classe Register, capaz de lidar com o registro de qualquer classe com o método displayAttributes(), gerando um arquivo csv de logs, para mostrar quando o elemento com o respectivo id foi criado, e o arquivo referente aos registros da classe.
+
+Um sistema bem simples, porém um desafio para meu primeiro projeto.
